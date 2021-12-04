@@ -59,6 +59,12 @@ def main():
             views = item['statistics']['viewCount']
             likes = item['statistics']['likeCount']
             dislikes = item['statistics']['dislikeCount']
+            if dislikes > 10
+                dislikes = 10 + (dislikes - 10) / 2
+            if dislikes > 50
+                dislikes = 50 + (dislikes - 50) / 2
+            if dislikes > 100
+                dislikes = 100 + (dislikes - 100) / 2
     
         ratio = float(likes) / (float(likes) + float(dislikes)) * 100
         today = date.today()
